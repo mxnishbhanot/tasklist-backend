@@ -13,7 +13,8 @@
     "watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/main.ts",
     "lint": "eslint .",
     "format": "eslint src/**/*.ts --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build": "npm run format && tsc"
   },
   "keywords": [],
   "author": "",
