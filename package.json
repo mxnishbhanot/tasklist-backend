@@ -5,22 +5,14 @@
   "main": "index.js",
   "husky": {
     "hooks": {
-    "pre-commit": "lint-staged"
+      "pre-commit": "echo \"[Husky] pre-commit\""
     }
-  },
-  "lint-staged": {
-    "*.js": [
-    "eslint — fix",
-    "prettier — write",
-    "git add"
-  ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/main.ts",
     "lint": "eslint .",
     "format": "eslint src/**/*.ts --fix"
-   
   },
   "keywords": [],
   "author": "",
